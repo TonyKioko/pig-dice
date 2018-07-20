@@ -23,7 +23,23 @@ $(document).ready(function(){
     console.log(roundScore);
   })
 
+  $(".btn-hold").click(function(){
+    // alert("clicked Hold");
+    if (gamePlaying) {
+      scores[activePlayer] += roundScore;
+      $("#score-"+activePlayer).text(scores[activePlayer]);
+      if (scores[activePlayer] >=20){
+        $("#name-"+activePlayer).text("BOOM, YOU WIN!");
+        $(".dice").hide();
+        $(".gamer-"+activePlayer+"-section").addClass("winner");
+        $(".gamer-"+activePlayer+"-section").removeClass("active");
+        gamePlaying = false;
+      } else {nextGamer();}
 
+    }
+
+
+  })
 
 
 function initializeGame(){
