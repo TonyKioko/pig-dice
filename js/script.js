@@ -47,6 +47,17 @@ $(document).ready(function(){
 
 })
 
+var nextGamer = function (){
+  activePlayer ===0? activePlayer =1: activePlayer = 0;
+  roundScore = 0;
+  $("#current-0").text(0);
+  $("#current-1").text(0);
+  $(".gamer-0-section").toggleClass("active");
+  $(".gamer-1-section").toggleClass("active");
+  // $(".player-0-panel").removeClass("active");
+  // $(".player-1-panel").addClass("active");
+  $(".dice").hide();
+}
 
 function initializeGame(){
   scores = [0, 0];
