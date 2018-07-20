@@ -1,0 +1,125 @@
+body {
+  background-color: pink;
+}
+#column {
+  background-color: yellow;
+  height:700px;
+  width:100%;
+  margin: 0 auto;
+}
+
+.gamer-0-section,
+.gamer-1-section {
+    width: 50%;
+    float: left;
+    height: 600px;
+    padding: 100px;
+}
+
+.gamer-current-box {
+    background-color: #EB4D4D;
+    color: #fff;
+    width: 80px;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+.gamer-name {
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.gamer-score {
+    text-align: center;
+    font-size: 80px;
+    font-weight: 100;
+    color: #EB4D4D;
+    margin-bottom: 130px;
+}
+.active { background-color: #f7f7f7; }
+.active .gamer-name { font-weight: 300; }
+
+.active .gamer-name::after {
+    content: "\2022";
+    font-size: 47px;
+    position: absolute;
+    color: #EB4D4D;
+    top: -7px;
+    right: 10px;
+
+}
+
+.gamer-current-box {
+    background-color: #EB4D4D;
+    color: #fff;
+    width: 40%;
+    margin: 0 auto;
+    padding: 12px;
+    text-align: center;
+}
+
+.gamer-current-label {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #222;
+}
+
+.gamer-current-score {
+    font-size: 30px;
+}
+
+
+button {
+    position: absolute;
+    width: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #D11481;
+    background: none;
+    border: none;
+    font-family: Lato;
+    font-size: 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-weight: 300;
+    transition: background-color 0.3s, color 0.3s;
+}
+button:hover { font-weight: 600; }
+button:hover i { margin-right: 20px; }
+
+button:focus {
+    outline: none;
+}
+
+i {
+    color: #EB4D4D;
+    display: inline-block;
+    margin-right: 15px;
+    font-size: 32px;
+    line-height: 1;
+    vertical-align: text-top;
+    margin-top: -4px;
+    transition: margin 0.3s;
+}
+
+.btn-new { top: 240px;}
+.btn-dice { top: 700px;}
+.btn-hold { top: 750px;}
+
+.dice {
+    display:none;
+    position: absolute;
+    left: 50%;
+    top: 400px;
+    transform: translateX(-50%);
+    height: 100px;
+    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+.winner { background-color: #f7f7f7; }
+.winner .gamer-name { font-weight: 300; color: #EB4D4D; }
