@@ -40,6 +40,12 @@ $(document).ready(function(){
 
 
   })
+  $(".btn-new").click(function(){
+      initializeGame();
+      alert("new")
+  })
+
+})
 
 
 function initializeGame(){
