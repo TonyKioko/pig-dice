@@ -13,7 +13,7 @@ The Pig Dice is a simple game where two players have a chance to roll a dice.Eac
 + If you keep rolling again, you accumulate points to add to your session score but if you get a one, then all your points accumulated in that turn are nullified.
 
 ### Live Link ###
-
+ https://tonykioko.github.io/pig-dice/index.html
 ## Setup/Installation Requirements.
 * Git clone https://github.com/TonyKioko/pig-dice.git or download and unzip the repository from github.
 * Open index.html with your favorite browser
