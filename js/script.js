@@ -1,11 +1,11 @@
-var scores, roundScore, activePlayer, diceRoll, gamePlaying;
+var scores, turnScore, activePlayer, diceRoll, gameOn;
 
 
 initializeGame();
 
 $(document).ready(function() {
-  $(".btn-dice").click(function() {
-    if (gamePlaying) {
+  $(".roll-dice").click(function() {
+    if (gameOn) {
       diceRoll = Math.floor(Math.random() * 6) + 1;
       console.log(diceRoll);
       var diceShow = $(".dice");
@@ -13,20 +13,20 @@ $(document).ready(function() {
       diceShow.show();
       $("#current-" + activePlayer).text(diceRoll);
       if (diceRoll !== 1) {
-        roundScore += diceRoll;
-        $("#roundscore-"+activePlayer).text(roundScore);
+        turnScore += diceRoll;
+        $("#roundscore-"+activePlayer).text(turnScore);
       } else {
         nextGamer();
       }
     }
 
-    console.log(roundScore);
+    console.log(turnScore);
   })
 
-  $(".btn-hold").click(function() {
+  $(".hold-score").click(function() {
     // alert("clicked Hold");
-    if (gamePlaying) {
-      scores[activePlayer] += roundScore;
+    if (gameOn) {
+      scores[activePlayer] += turnScore;
       $("#score-" + activePlayer).text(scores[activePlayer]);
       $("#roundscore-0").text(0);
       $("#roundscore-1").text(0);
@@ -42,18 +42,18 @@ $(document).ready(function() {
         $("#name-" + activePlayer).text("CONGRATULATIONS!!!");
         $(".dice").hide();
         $(".gamer-" + activePlayer + "-section").addClass("winner");
-        $(".gamer-" + activePlayer + "-section").removeClass("active");
+        $(".gamer-" + activePlayer + "-section").removeClass("playing");
         // $("#roundscr-"+activePlayer).text(0);
         $("#roundscore-0").text(0);
         $("#roundscore-1").text(0);
         $(".final-score").val("")
-        gamePlaying = false;
+        gameOn = false;
       } else {
         nextGamer();
       }
     }
   })
-  $(".btn-new").click(function() {
+  $(".new-game").click(function() {
     initializeGame();
     alert("new")
   })
@@ -62,11 +62,11 @@ $(document).ready(function() {
 
 var nextGamer = function() {
   activePlayer === 0 ? activePlayer = 1 : activePlayer = 0;
-  roundScore = 0;
+  turnScore = 0;
   $("#current-0").text(0);
   $("#current-1").text(0);
-  $(".gamer-0-section").toggleClass("active");
-  $(".gamer-1-section").toggleClass("active");
+  $(".gamer-0-section").toggleClass("playing");
+  $(".gamer-1-section").toggleClass("playing");
   // $(".player-0-panel").removeClass("active");
   // $(".player-1-panel").addClass("active");
   $(".dice").hide();
@@ -76,9 +76,9 @@ var nextGamer = function() {
 
 function initializeGame() {
   scores = [0, 0];
-  roundScore = 0;
+  turnScore = 0;
   activePlayer = 0;
-  gamePlaying = true;
+  gameOn = true;
   $("#score-0").text(0);
   $("#score-1").text(0);
   $("#current-0").text(0);
@@ -90,9 +90,9 @@ function initializeGame() {
   $("#name-1").text("Player 2");
   $(".gamer-0-section").removeClass("winner");
   $(".gamer-1-section").removeClass("winner");
-  $(".gamer-0-section").removeClass("active");
-  $(".gamer-1-section").removeClass("active");
-  $(".gamer-0-section").addClass("active");
+  $(".gamer-0-section").removeClass("playing");
+  $(".gamer-1-section").removeClass("playing");
+  $(".gamer-0-section").addClass("playing");
 
 
 }
