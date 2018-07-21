@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
   <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/4.2.4/collection/icon/icon.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
@@ -27,25 +28,25 @@
         <div class="gamer-0-section active">
           <div class="gamer-name" id="name-0">Player 1</div>
           <div class="gamer-score" id="score-0">7</div>
-          <div class="gamer-roundscore-box">
-            <div class="roundscore-label">TURN SCORE</div>
-            <div class="roundscore" id="roundscore-0"></div>
-          </div>
           <div class="gamer-current-box">
             <div class="gamer-current-label">DICE ROLL</div>
             <div class="gamer-current-score" id="current-0">11</div>
+          </div>
+          <div class="gamer-roundscore-box">
+            <div class="roundscore-label">TURN SCORE</div>
+            <div class="roundscore" id="roundscore-0"></div>
           </div>
         </div>
         <div class="gamer-1-section active">
           <div class="gamer-name" id="name-1">Player 2</div>
           <div class="gamer-score" id="score-1">7</div>
-          <div class="gamer-roundscore-box">
-            <div class="roundscore-label">TURN SCORE</div>
-            <div class="roundscore" id="roundscore-1"></div>
-          </div>
           <div class="gamer-current-box">
             <div class="gamer-current-label">DICE ROLL</div>
             <div class="gamer-current-score" id="current-1">11</div>
+          </div>
+          <div class="gamer-roundscore-box">
+            <div class="roundscore-label">TURN SCORE</div>
+            <div class="roundscore" id="roundscore-1"></div>
           </div>
         </div>
 
@@ -54,16 +55,16 @@
     <div class="row">
       <div class="col-md-12">
         <input type="text" class="final-score" placeholder="Enter Final Score">
-        <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
-        <button class="btn-dice"><i class="ion-ios-loop"></i>Roll dice</button>
+        <button class="btn-new"><ion-icon name="logo-game-controller-b"></ion-icon>New game</button>
+        <button class="btn-dice"><ion-icon name="play-circle"></ion-icon>Roll dice</button>
         <br>
-        <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+        <button class="btn-hold"><ion-icon name="folder"></ion-icon>Hold</button>
       </div>
     </div>
 
     <img src="images/throw-1.png" alt="Dice" class="dice">
   </div>
-
+  <script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
