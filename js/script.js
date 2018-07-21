@@ -7,24 +7,21 @@ $(document).ready(function() {
   $(".roll-dice").click(function() {
     if (gameOn) {
       diceRoll = Math.floor(Math.random() * 6) + 1;
-      console.log(diceRoll);
       var diceShow = $(".dice");
       diceShow.attr("src", 'images/throw-' + diceRoll + '.png')
       diceShow.show();
       $("#current-" + activePlayer).text(diceRoll);
       if (diceRoll !== 1) {
         turnScore += diceRoll;
-        $("#roundscore-"+activePlayer).text(turnScore);
+        $("#roundscore-" + activePlayer).text(turnScore);
       } else {
         nextGamer();
       }
     }
 
-    console.log(turnScore);
   })
 
   $(".hold-score").click(function() {
-    // alert("clicked Hold");
     if (gameOn) {
       scores[activePlayer] += turnScore;
       $("#score-" + activePlayer).text(scores[activePlayer]);
@@ -33,7 +30,7 @@ $(document).ready(function() {
       var finalScore = parseInt($(".final-score").val());
       var winningScore;
       if (finalScore) {
-          winningScore = finalScore;
+        winningScore = finalScore;
       } else {
         winningScore = 50;
       }
@@ -43,7 +40,6 @@ $(document).ready(function() {
         $(".dice").hide();
         $(".gamer-" + activePlayer + "-section").addClass("winner");
         $(".gamer-" + activePlayer + "-section").removeClass("playing");
-        // $("#roundscr-"+activePlayer).text(0);
         $("#roundscore-0").text(0);
         $("#roundscore-1").text(0);
         $(".final-score").val("")
@@ -55,7 +51,6 @@ $(document).ready(function() {
   })
   $(".new-game").click(function() {
     initializeGame();
-    alert("new")
   })
 
 })
@@ -67,8 +62,6 @@ var nextGamer = function() {
   $("#current-1").text(0);
   $(".gamer-0-section").toggleClass("playing");
   $(".gamer-1-section").toggleClass("playing");
-  // $(".player-0-panel").removeClass("active");
-  // $(".player-1-panel").addClass("active");
   $(".dice").hide();
   $("#roundscore-0").text(0);
   $("#roundscore-1").text(0);
@@ -95,4 +88,4 @@ function initializeGame() {
   $(".gamer-0-section").addClass("playing");
 
 
-}
+};

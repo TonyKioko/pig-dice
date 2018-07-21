@@ -1,226 +1,236 @@
-
-
-
 body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/bg1.jpeg);
-  /* background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
-/* background: linear-gradient(to right, #FFD6BB, #E4E4E4); */
-font-family: 'Cardo', serif;
-
+  font-family: 'Cardo', serif;
 }
-.container{
+
+.container {
   margin: 10px auto;
 }
+
 #column {
-/* background: #00BDF8; */
-background: #FFFFF;
-
-
-
-
-
-  height:560px;
-  width:100%;
+  background: #FFFFF;
+  height: 560px;
+  width: 100%;
   margin: 14px auto;
-  /* border:4px solid grey; */
 }
 
-.gamer-0-section,
-.gamer-1-section {
-    width: 50%;
-    float: left;
-    height: 550px;
-    padding: 40px;
+.gamer-0-section, .gamer-1-section {
+  width: 50%;
+  float: left;
+  height: 550px;
+  padding: 40px;
 }
+
 .gamer-roundscore-box {
   background: #00B257;
   color: #fff;
   width: 150px;
   margin: 0 auto;
   position: relative;
-  top:-60px;
+  top: -60px;
   padding-bottom: 12px;
   font-size: 20px;
   text-align: center;
-  /* margin-bottom: 10px; */
 }
 
 .gamer-current-box {
-    background-color: #00B257;
-    color: #fff;
-    width: 80px;
-    position: relative;
-    top:-80px;
-    margin: 0 auto;
-    padding: 4px;
-    text-align: center;
+  background-color: #00B257;
+  color: #fff;
+  width: 80px;
+  position: relative;
+  top: -80px;
+  margin: 0 auto;
+  padding: 4px;
+  text-align: center;
 }
-#roll-label{
+
+#roll-label {
   color: #fff;
   font-size: 18px;
 }
+
 .gamer-name {
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: 100;
-    margin-top: 20px;
-    margin-bottom: 10px;
-    position: relative;
-    color:#f7f7f7;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 100;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  position: relative;
+  color: #f7f7f7;
 }
+
 .gamer-score {
-    text-align: center;
-    font-size: 80px;
-    font-weight: 100;
-    color: #EB4D4D;
-    margin-bottom: 130px;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 100;
+  color: #EB4D4D;
+  margin-bottom: 130px;
 }
+
 .roundscore {
   font-size: 34px;
 }
-.playing { background-color: #00BDF8; }
-.playing .gamer-name { font-weight: 300; }
+
+.playing {
+  background-color: #00BDF8;
+}
+
+.playing .gamer-name {
+  font-weight: 300;
+}
 
 .playing .gamer-name::after {
-    content: "\2022";
-    font-size: 47px;
-    position: absolute;
-    color: #EB4D4D;
-    top: -7px;
-    right: 8px;
-
+  content: "\2022";
+  font-size: 47px;
+  position: absolute;
+  color: #EB4D4D;
+  top: -7px;
+  right: 8px;
 }
 
 .gamer-current-box {
-    background-color: #EB4D4D;
-    color: #fff;
-    width: 40%;
-    margin: 0 auto;
-    padding: 12px;
-    text-align: center;
+  background-color: #EB4D4D;
+  color: #fff;
+  width: 40%;
+  margin: 0 auto;
+  padding: 12px;
+  text-align: center;
 }
 
 .gamer-current-label {
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    font-size: 14px;
-    color: #222;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #222;
 }
 
 .gamer-current-score {
-    font-size: 40px;
+  font-size: 40px;
 }
+
 .final-score {
   position: absolute;
   margin-left: 50%;
-  top:-200px;
+  top: -200px;
   transform: translateX(-50%);
   font-size: 18px;
   text-align: center;
-  width:170px;
-  padding:8px;
-  border:none;
+  width: 170px;
+  padding: 8px;
+  border: none;
 }
-
 
 button {
-    position: absolute;
-    width: 200px;
-    left: 50%;
-    transform: translateX(-50%);
-    color: #fff;
-    background-color: #00BDF8;
-    border: 2px solid transparent;
-    font-family: Lato;
-    font-size: 20px;
-    text-transform: uppercase;
-    cursor: pointer;
-    border-radius: 7px;
-    font-weight: 300;
-    transition: background-color 0.3s, color 0.3s;
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  background-color: #00BDF8;
+  border: 2px solid transparent;
+  font-family: Lato;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+  border-radius: 7px;
+  font-weight: 300;
+  transition: background-color 0.3s, color 0.3s;
 }
-button:hover { font-weight: 600; }
-button:hover i { margin-right: 20px; }
-#btn-col{
+
+button:hover {
+  font-weight: 600;
+}
+
+button:hover i {
+  margin-right: 20px;
+}
+
+#btn-col {
   text-align: center;
 }
 
 button:focus {
-    outline: none;
+  outline: none;
 }
 
-i,ion-icon {
-    color: #EB4D4D;
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 32px;
-    line-height: 1;
-    vertical-align: text-top;
-    margin-top: -6px;
-    transition: margin 0.3s;
+i, ion-icon {
+  color: #EB4D4D;
+  display: inline-block;
+  margin-right: 10px;
+  font-size: 32px;
+  line-height: 1;
+  vertical-align: text-top;
+  margin-top: -6px;
+  transition: margin 0.3s;
 }
 
 .new-game {
-  left:50%;
+  left: 50%;
   top: 33px;
-  margin-top:30px;
+  margin-top: 30px;
 }
+
 .roll-dice {
-  left:42%;
+  left: 42%;
   top: 0px;
-  margin-right:10px;
+  margin-right: 10px;
 }
+
 .hold-score {
-  margin-left:12%;
+  margin-left: 12%;
   top: 0px;
-  width:160px;
-
+  width: 160px;
 }
+
 .btn-rules {
-  left:50%;
+  left: 50%;
   top: 75px;
-  margin-top:40px;
-  width:140px;
-
+  margin-top: 40px;
+  width: 140px;
 }
-.btn-rules a,
-.btn-play a
-{
-  color:#fff;
+
+.btn-rules a, .btn-play a {
+  color: #fff;
   text-decoration: none;
 }
-input.final-score{
-  /* background: linear-gradient(to right, #03141A, #EB4D4D); */
-  color:red;
+
+input.final-score {
+  color: #EB4D4D;
   font-size: 20px;
-  width:180px;
-  border:2px solid #03141A;
+  width: 180px;
+  border: 2px solid #03141A;
   border-radius: 10px;
 }
-input.final-score:focus{
-  border:none;
+
+input.final-score:focus {
+  border: none;
 }
 
 .dice {
-    display:none;
-    position: absolute;
-    left: 50%;
-    top: 200px;
-    transform: translateX(-50%);
-    height: 150px;
-    width:150px;
-    box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
-    border-radius: 50%;
+  display: none;
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  transform: translateX(-50%);
+  height: 150px;
+  width: 150px;
+  box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+  border-radius: 50%;
 }
-.winner { background-color: #f7f7f7; }
-.winner .gamer-name { font-weight: 300; color: #EB4D4D; }
+
+.winner {
+  background-color: #f7f7f7;
+}
+
+.winner .gamer-name {
+  font-weight: 300;
+  color: #EB4D4D;
+}
 
 #game-rules {
-  color:white;
-  font-size:25px;
+  color: white;
+  font-size: 25px;
   margin: 10px auto;
 }
