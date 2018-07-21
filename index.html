@@ -13,40 +13,48 @@
 </head>
 
 <body>
-  <img src="../images/throw-1.png" alt="Dice" class="dice">
   <div class="container">
-    <h1>Pig Dice Game</h1>
+    <!-- <h1>Pig Dice Game</h1>
     <h3>Game Rules</h3>
     <ul>
       <li>If you roll a 1, you score nothing and it becomes the next player's turn.</li>
       <li>If you roll any other number, it is added to your turn total and your turn continues.</li>
       <li>If you choose to "hold", your turn total is added to your score, and it becomes the next player's turn.</li>
       <li>The first player to score 100 or more points wins.</li>
-    </ul>
+    </ul> -->
     <div class="row">
-      <div class="col-md-10" id="column">
+      <div class="col-md-12" id="column">
         <div class="gamer-0-section active">
           <div class="gamer-name" id="name-0">Player 1</div>
           <div class="gamer-score" id="score-0">7</div>
+          <div class="roundscr" id="roundscr-0"></div>
           <div class="gamer-current-box">
-            <div class="gamer-current-label">Current</div>
+            <div class="gamer-current-label">DICE ROLL</div>
             <div class="gamer-current-score" id="current-0">11</div>
           </div>
         </div>
         <div class="gamer-1-section active">
           <div class="gamer-name" id="name-1">Player 2</div>
           <div class="gamer-score" id="score-1">7</div>
+          <div class="roundscr" id="roundscr-1"></div>
           <div class="gamer-current-box">
-            <div class="gamer-current-label">Current</div>
+            <div class="gamer-current-label">DICE ROLL</div>
             <div class="gamer-current-score" id="current-1">11</div>
           </div>
         </div>
 
       </div>
     </div>
-    <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
-    <button class="btn-dice"><i class="ion-ios-loop"></i>Roll dice</button>
-    <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+    <div class="row">
+      <div class="col-md-12">
+        <input type="text" class="final-score" placeholder="Enter Final Score">
+        <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+        <button class="btn-dice"><i class="ion-ios-loop"></i>Roll dice</button>
+        <br>
+        <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+      </div>
+    </div>
+
     <img src="images/throw-1.png" alt="Dice" class="dice">
   </div>
 
