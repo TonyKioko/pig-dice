@@ -19,7 +19,7 @@ background: #03141A;
 
   height:560px;
   width:100%;
-  margin: 0 auto;
+  margin: 14px auto;
   /* border:4px solid grey; */
 }
 
@@ -95,7 +95,7 @@ background: #03141A;
 .gamer-current-label {
     text-transform: uppercase;
     margin-bottom: 10px;
-    font-size: 12px;
+    font-size: 14px;
     color: #222;
 }
 
@@ -121,7 +121,7 @@ button {
     left: 50%;
     transform: translateX(-50%);
     color: #fff;
-    background: none;
+    background-color: #03141A;
     border: 2px solid transparent;
     font-family: Lato;
     font-size: 20px;
@@ -140,21 +140,21 @@ button:focus {
     outline: none;
 }
 
-i {
+i,ion-icon {
     color: #EB4D4D;
     display: inline-block;
-    margin-right: 15px;
+    margin-right: 10px;
     font-size: 32px;
     line-height: 1;
     vertical-align: text-top;
-    margin-top: -4px;
+    margin-top: -6px;
     transition: margin 0.3s;
 }
 
 .btn-new {
   left:50%;
-  top: 40px;
-  margin-top:40px;
+  top: 33px;
+  margin-top:30px;
 }
 .btn-dice {
   left:500px;
@@ -163,7 +163,24 @@ i {
 .btn-hold {
   margin-left:140px;
   top: 0px;
-  border: 4px solid grey;
+
+}
+.btn-rules {
+  left:50%;
+  top: 75px;
+  margin-top:40px;
+  width:140px;
+
+}
+.btn-rules a,
+.btn-play a
+{
+  color:#fff;
+  text-decoration: none;
+}
+input.final-score{
+  background: linear-gradient(to right, #03141A, #EB4D4D);
+  color:#fff;
 }
 
 .dice {
@@ -178,3 +195,9 @@ i {
 }
 .winner { background-color: #f7f7f7; }
 .winner .gamer-name { font-weight: 300; color: #EB4D4D; }
+
+#game-rules {
+  color:white;
+  font-size:20px;
+  margin: 10px auto;
+}
