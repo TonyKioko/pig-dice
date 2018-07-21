@@ -1,4 +1,4 @@
-Pig Dice
+# Pig Dice
 #### Pig Dice created as an Independent Project at the end of Week Four, 20/07/2018
 #### By **Tony Kioko Munywoki**
 ## Description
