@@ -198,10 +198,13 @@ i, ion-icon {
 
 input.final-score {
   color: #EB4D4D;
-  font-size: 20px;
-  width: 180px;
-  border: 2px solid #03141A;
+  font-size: 17px;
+  width: 206px;
+  border: 2px solid #00BDF8;
+  font-weight: 800;
   border-radius: 10px;
+  text-transform:uppercase;
+
 }
 
 input.final-score:focus {
@@ -231,6 +234,11 @@ input.final-score:focus {
 
 #game-rules {
   color: white;
-  font-size: 25px;
+  font-size: 30px;
   margin: 10px auto;
+}
+span {
+  text-decoration: underline;
+  font-weight: bold;
+
 }
