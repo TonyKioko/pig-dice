@@ -82,7 +82,7 @@ body {
 }
 
 .playing .gamer-name::after {
-  content: "\2022";
+  content: "\2663";
   font-size: 47px;
   position: absolute;
   color: #EB4D4D;
